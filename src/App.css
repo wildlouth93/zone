@@ -697,7 +697,7 @@ i {
   height: 100vh;
   min-width: 850px;
   min-height: 600px;
-  background: url(./splash.jpg);
+  background-image: url(./splash.jpg);
   display: flex;
   flex: 1 0 auto;
   flex-direction: column;

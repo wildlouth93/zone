@@ -1,5 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
+import splash from './splash.jpg';
 import './App.css';
 
 function App() {
