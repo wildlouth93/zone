@@ -30,7 +30,7 @@ class Game extends Component {
     //   // },
     // });
     // window.api_call = api_call;
-    const api_call = await fetch('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/6');
+    const api_call = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/6');
     // fetch(url, { mode: "no-cors" })
     //   .then(response => response.json())
     //   .then(contents => console.log(contents))
