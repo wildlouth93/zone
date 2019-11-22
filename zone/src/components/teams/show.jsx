@@ -141,8 +141,8 @@ class TeamShow extends Component {
     let oppDiv;
     if (this.state.opponent) {
       oppDiv = <div className="team-stats">
-        <p onClick={this.handleOpponentToggle}>Opponent Comparison <i className="dd-arrow-up"></i></p>
-        <div className="team-stats-content">
+        <p onClick={this.handleOpponentToggle} className="opp-comp-heading">Opponent Comparison <i className="dd-arrow-up"></i></p>
+        <div className="opp-team-stats-content">
           {
             this.state.stats.results.opponent.map((category, i) => (
               <div className="team-stats-category" key={i}>
@@ -153,7 +153,7 @@ class TeamShow extends Component {
         </div>
       </div>
     } else {
-      oppDiv = <p onClick={this.handleOpponentToggle}>See Opponents Stats <i className="dd-arrow-down"></i></p>
+      oppDiv = <p onClick={this.handleOpponentToggle} className="opp-comp-heading">Opponent Comparison <i className="dd-arrow-down"></i></p>
     }
 
     return (
@@ -169,17 +169,21 @@ class TeamShow extends Component {
         <h4>Coach: {this.state.roster.coach[0].firstName} {this.state.roster.coach[0].lastName}</h4>
         <div className="team-stats">
           <h1>Stats</h1>
-          <div className="team-stats-content">
-            {
-              this.state.stats.results.stats.categories.map((category, i) => (
-                <div className="team-stats-category" key={i}>
-                  <TeamStatCategory category={category} />
-                </div>
-              ))
-            }
+          <div className="team-stats-content-outer">
+            <h2>Team Stats</h2>
+            <div className="team-stats-content">
+              {
+                this.state.stats.results.stats.categories.map((category, i) => (
+                  <div className="team-stats-category" key={i}>
+                    <TeamStatCategory category={category} />
+                  </div>
+                ))
+              }
+            </div>
+            {oppDiv}
           </div>
         </div>
-       {oppDiv}
+      
         <div className="team-roster">
           <h1>Roster</h1>
           <div className="team-roster-content"> 

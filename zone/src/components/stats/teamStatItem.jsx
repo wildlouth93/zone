@@ -12,9 +12,9 @@ class TeamStatItem extends Component {
         <div>
         {
           this.props.stats.map((stat,i) => (
-            <div key={i}>
-              <p>{stat.displayName}</p>
-              <p>{stat.displayValue}</p>
+            <div className="team-ind-stat-item" key={i}>
+              <p className="team-ind-stat-item-name">{stat.displayName}</p>
+              <p className="team-ind-stat-item-val">{stat.displayValue}</p>
             </div>
           ))
         }

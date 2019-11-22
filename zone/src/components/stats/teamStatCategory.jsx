@@ -39,7 +39,8 @@ class TeamStatCategory extends Component {
     // console.log(this.props.category.stats);
     let moreStats;
     if (this.state.opened2) {
-      moreStats = <div>
+      moreStats = <div className="stat-dropdown-outer-box">
+        <h4>{this.props.category.displayName} Numbers</h4>
         <TeamStatItem stats={this.props.category.stats} />
         <p onClick={this.handleOpen2Toggle}><i className="dd-arrow-up"></i></p>
       </div>
@@ -55,7 +56,7 @@ class TeamStatCategory extends Component {
           <img onClick={this.handleOpenToggle} className="stat-icon" src={`png/${this.props.category.displayName}-icon.png`} alt="" />
           <h4 className="stat-index-heading" onClick={this.handleOpenToggle}>{this.props.category.displayName}</h4>
         </div>
-
+        <h4>{this.props.category.displayName} Visuals</h4>
         <TeamStatItemVisuals stats={this.props.category.stats} displayName={this.props.category.displayName}/>
        {moreStats}
       </div>

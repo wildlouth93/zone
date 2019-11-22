@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { HashRouter, Link } from 'react-router-dom';
 import OppTeamStatItem from './oppTeamStatItem';
 import TeamStatItemVisuals from './teamStatItemVisuals';
+import TeamStatItem from './teamStatItem';
 
 class OppTeamStatCategory extends Component {
   constructor(props) {
@@ -43,6 +44,7 @@ class OppTeamStatCategory extends Component {
       moreStats2 = <div className="opp-visuals-dropdown">
         <h4>Opponent Stats</h4>
         <TeamStatItemVisuals stats={this.props.category.stats} displayName={this.props.category.displayName} />
+        <TeamStatItem stats={this.props.category.stats} />
         <p onClick={this.handleOpen4Toggle}><i className="dd-arrow-up"></i></p>
       </div>
     } else {
@@ -53,7 +55,7 @@ class OppTeamStatCategory extends Component {
 
     let statDisplay2;
     if (this.state.opened3) {
-      statDisplay2 = <div className="opp-comparison-dropdown">
+      statDisplay2 = <div className="stat-icon-outer-box">
         <div className="stat-icon-box">
           <img onClick={this.handleOpen3Toggle} className="stat-icon" src={`png/${this.props.category.displayName}-icon.png`} alt="" />
           <h4 className="stat-index-heading" onClick={this.handleOpen3Toggle}>{this.props.category.displayName}</h4>
@@ -64,7 +66,7 @@ class OppTeamStatCategory extends Component {
         {moreStats2}
       </div>
     } else {
-      statDisplay2 = <div className="stat-icon-outer-box">
+      statDisplay2 = <div className="opp-stat-icon-outer-box">
         <div className="stat-icon-box">
           <img onClick={this.handleOpen3Toggle} className="stat-icon" src={`png/${this.props.category.displayName}-icon.png`} alt="" />
           <h4 className="stat-index-heading" onClick={this.handleOpen3Toggle}>{this.props.category.displayName}</h4>

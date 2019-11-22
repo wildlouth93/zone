@@ -35,7 +35,6 @@ class TeamIndexItem extends Component {
     }
 
     // let style = `color: ${color}, background: ${altColor}`;
-    console.log(style);
     return (
       <div className="team-index-item">
         <HashRouter>

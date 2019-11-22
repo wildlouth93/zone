@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import { HashRouter, Link } from 'react-router-dom';
 import PlayerIndexItem from './playerIndexItem';
 import TeamPlayerIndexItem from './teamPlayerIndexItem';
+import PlayerStats from './playerStats';
 
 class PlayerShow extends PureComponent {
   constructor(props) {
@@ -48,7 +49,7 @@ class PlayerShow extends PureComponent {
     if (this.state.loading) return <h2>Loading...</h2>;
  
     console.log(this.state.player);
-    console.log(this.state.stats);
+    // console.log(this.state.stats);
     
     let headshot;
     {
@@ -67,12 +68,30 @@ class PlayerShow extends PureComponent {
 
         <h1>{this.state.player.athlete.displayName}</h1>
         <img className="player-profile-headshot" src={headshot} alt="logo192.png" />
+        
 
-        <ul className="player-player-index-ul">
-          {this.state.player.playerSwitcher.athletes.map((player, i) => (
-            <TeamPlayerIndexItem player={player} key={i} />
-          ))}
-        </ul>
+        <div className="player-info-div">
+          <img className="team-pic" src={this.state.player.athlete.team.logos[0].href} alt="logo192.png" />
+          <img className="college-team-pic" src={this.state.player.athlete.collegeTeam.logos[0].href} alt="logo192.png" />
+        </div>
+
+        <div className="player-stats-div">
+          <p>{this.state.stats.categories[0].name}</p>
+          <p>{this.state.stats.labels[0]}</p>
+          <p>{this.state.stats.names[0]}</p>
+          <p>{this.state.stats.displayNames[0]}</p>
+          <p>{this.state.stats.splitCategories[0].name}</p>
+          <PlayerStats stats={this.state.stats} categories={this.state.stats.categories} labels={this.state.stats.labels} displayNames={this.state.stats.displayNames} />
+
+        </div>
+
+        <div className="player-player-index-div">
+          <ul className="player-player-index-ul">
+            {this.state.player.playerSwitcher.athletes.map((player, i) => (
+              <TeamPlayerIndexItem player={player} key={i} />
+            ))}
+          </ul>
+        </div>
       </div>
     )
   }

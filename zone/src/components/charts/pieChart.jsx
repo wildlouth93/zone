@@ -23,7 +23,8 @@ class PieChart extends React.Component {
           {
             label: label,
             data,
-            backgroundColor: backgroundColor
+            backgroundColor: backgroundColor,
+            color: "white"
           }
         ]
       },
@@ -32,7 +33,8 @@ class PieChart extends React.Component {
         legend: {
           position: "right",
           labels: {
-            usePointStyle: true
+            usePointStyle: true,
+            fontColor: "white"
           }
         }
       }

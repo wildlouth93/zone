@@ -31,16 +31,30 @@ class BarChart extends React.Component {
       options: {
         responsive: true,
         legend: {
-          display: false
-          // labels: {
-          //   usePointStyle: true
-          // }
+          display: false,
+          labels: {
+            usePointStyle: true,
+            fontColor: "white"
+          },
+          fontColor: "white"
+        },
+        labels: {
+          fontColor: "white"
         },
         scales: {
           yAxes: [{
             ticks: {
-              beginAtZero: true
+              beginAtZero: true,
+              fontColor: "white"
             }
+          }],
+          xAxes: [{
+            ticks: {
+              fontColor: "white"
+            }
+            // labels: {
+            //   fontColor: "white"
+            // }
           }]
         }
       }
