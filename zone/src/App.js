@@ -20,6 +20,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <Switch>
+        <Route exact path="/game" component={Game} />
+      </Switch>
     </div>
   );
 }

@@ -36,3 +36,229 @@
     transform: rotate(360deg);
   }
 }
+
+.team-index-logo {
+  width: 100%;
+  height: auto;
+  background: black;
+  border: 5px solid white;
+  /* border-top: 5px solid white;
+  border-right: 5px solid black;
+  border-left: 5px solid black; */
+}
+
+.team-index-logo:hover {
+  /* width: 400px;
+  z-index: 1; */
+  transform: scale(1.10);
+}
+
+/* .team-index-name {
+  width: 250px;
+  background: white;
+  margin-right: auto;
+  margin-left: auto;
+} */
+
+.team-profile-logo {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border: 1px solid red;
+}
+
+.player-roster-headshot {
+  width: 100px;
+  height: auto;
+}
+
+.player-profile-headshot {
+  width: 250px;
+  height: auto;
+}
+
+.team-index-ul {
+  display: flex;
+  overflow: scroll;
+  border: 5px solid black;
+  -ms-overflow-style: none;
+  background: black;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.team-index-ul::-webkit-scrollbar {
+  display: none;
+}
+
+.team-index-name {
+  color: white;
+  text-align: center;
+  background: black;
+  width: 250px;
+}
+
+.team-index-link {
+  text-decoration: none;
+}
+
+.team-index-item {
+  width: 300px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.home-body {
+  background: black;
+  color: white;
+  height: 100vh;
+}
+
+.home-heading {
+  padding: 20px;
+}
+
+
+.team-index-item:hover {
+}
+
+
+.team-player-index-ul {
+  display: flex;
+  overflow: scroll;
+  border: 5px solid black;
+  -ms-overflow-style: none;
+  /* background: black;
+  color: white; */
+  padding: 20px;
+  margin: 20px;
+  /* border-bottom: 1px solid white;
+  border-top: 1px solid white; */
+}
+
+.team-player-index-ul::-webkit-scrollbar {
+  display: none;
+}
+
+i {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.dd-arrow-down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.dd-arrow-up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.team-player-index-item {
+  width: 300px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.team-player-roster-headshot {
+  width: 150px;
+  height: 109px;
+}
+
+.player-player-index-ul {
+  display: flex;
+  overflow: scroll;
+  border: 5px solid black;
+  -ms-overflow-style: none;
+  /* background: black;
+  color: white; */
+  padding: 20px;
+  margin: 20px;
+  /* border-bottom: 1px solid white;
+  border-top: 1px solid white; */
+}
+
+.team-body {
+  background: black;
+  color: white;
+}
+
+.team-stats-content {
+  display: flex;
+  overflow: scroll;
+  border: 5px solid black;
+  -ms-overflow-style: none;
+  background: black;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.stat-index-heading {
+  text-align: center;
+}
+
+.team-stat-item-pie {
+  align-content: center;
+}
+
+.team-stat-item-pie > p {
+  text-align: center;
+}
+
+.opp-comp-stats {
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.opp-comp-stats > p {
+  text-align: center;
+}
+
+.team-stat-item-pie {
+  margin: 10px;
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.opp-visuals-dropdown > h4 {
+  text-align: center;
+}
+
+.opp-comparison-dropdown > h4 {
+  text-align: center;
+}
+
+/* .stat-icon {
+  border: 1px solid white;
+} */
+
+.stat-icon-box {
+  border-left: 1px solid white;
+  width: 250px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.stat-icon:hover {
+  /* width: 400px;
+  z-index: 1; */
+  transform: scale(1.10);
+}
+
+.stat-icon {
+  width: 80%;
+  height: auto;
+  margin-right: auto;
+  margin-left: 10%;
+}
