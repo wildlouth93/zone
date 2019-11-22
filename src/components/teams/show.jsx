@@ -70,9 +70,9 @@ class TeamShow extends Component {
 
   getTeam = async () => {
     let teamId = this.props.match.params.teamId;
-    const api_call = await fetch(`http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${teamId}`);
-    const api_call2 = await fetch(`http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${teamId}/roster`);
-    const api_call3 = await fetch(`http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${teamId}/statistics`)
+    const api_call = await fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${teamId}`);
+    const api_call2 = await fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${teamId}/roster`);
+    const api_call3 = await fetch(`https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams/${teamId}/statistics`)
     const data = await api_call.json();
     const rosterData = await api_call2.json();
     const statData = await api_call3.json()

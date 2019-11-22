@@ -20,7 +20,7 @@ class TeamsIndex extends Component {
 
   getTeams = async () => {
 
-    const api_call = await fetch('http://site.api.espn.com/apis/site/v2/sports/football/nfl/teams');
+    const api_call = await fetch('https://site.api.espn.com/apis/site/v2/sports/football/nfl/teams');
     const data = await api_call.json();
     this.setState({ teams: data.sports[0].leagues[0].teams})
   }
