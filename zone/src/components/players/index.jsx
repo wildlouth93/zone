@@ -32,7 +32,7 @@ class PlayersIndex extends Component {
 
   render() {
     // this.getTeams();
-    if (this.state.loading) return <h2 className="loading">Loading...</h2>;
+    if (this.state.loading) return <div className="loader"></div>;
   
     return (
       <div>
