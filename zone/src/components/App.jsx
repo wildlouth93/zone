@@ -11,8 +11,7 @@ import Home from './home.jsx';
 import TeamsIndex from './teams/index.jsx';
 import TeamShow from './teams/show.jsx';
 import PlayerShow from './players/show.jsx';
-import ExBarChart from './charts/exBarChart.jsx';
-import ExPieChart from './charts/exPieChart.jsx';
+import Splash from './splash.jsx'
 
 
 const App = () => {
@@ -21,12 +20,11 @@ const App = () => {
       <Switch>
         {/* <Route path="/ingredient" component={IngredientSearch} /> */}
         {/* <Route exact path="/" component={Game} /> */}
-        <Route exact path="/" component={Home} />
+        <Route exact path="/" component={Splash} />
+        <Route exact path="/zone" component={Home} />
         <Route exact path="/teams" component={TeamsIndex} />
         <Route exact path="/teams/:teamId" component={TeamShow} />
         <Route exact path="/players/:playerId" component={PlayerShow} />
-        <Route exact path="/exbar" component={ExBarChart} />
-        <Route exact path="/expie" component={ExPieChart} />
       </Switch>
     </HashRouter>
   );

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 // import Nav from 'nav.jsx'
 import TeamIndex from './teams/index';
+import PlayerIndex from './players/index';
 
 class Game extends Component {
   constructor(props) {
@@ -23,6 +24,8 @@ class Game extends Component {
           <h1 className="home-heading">Teams</h1>
           
           <TeamIndex className="home-team-index"/>
+          <h1 className="home-heading">Players</h1>
+          <PlayerIndex className="home-team-index" />
         </div>
       </div>
     )

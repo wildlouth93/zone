@@ -27,7 +27,7 @@ class TeamsIndex extends Component {
 
   render() {
     // this.getTeams();
-    if (this.state.loading) return <h2>Loading...</h2>;
+    if (this.state.loading) return <div class="loader"></div>;
     return (
       <div>
         <ul className="team-index-ul">

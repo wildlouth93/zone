@@ -26,16 +26,22 @@ class TeamPlayerIndexItem extends Component {
         headshot = "logo192.png";
       }
     }
+
     return (
-      <div className="team-player-index-item">
+      <div className="team-index-item">
         <HashRouter>
-          <Link to={`/players/${this.props.player.id}`}>
-            <img className="team-player-roster-headshot" src={headshot} alt="logo192.png" />
-            <div className="team-player-index-info">
+          <Link className="team-index-link" to={`/players/${this.props.player.id}`}>
+            {/* <img className="team-player-roster-headshot" src={headshot} alt="logo192.png" /> */}
+            <img className="team-index-logo" src={headshot} alt="logo192.png" />
+            <h2 className="team-index-name">{this.props.player.displayName}</h2>
+            <h2 className="team-index-name">{this.props.player.position.abbreviation} #{this.props.player.jersey}</h2>
+            {/* <h2 className="team-index-name">{this.props.player.jersey}</h2> */}
+
+            {/* <div className="team-player-index-info">
               <p>{this.props.player.displayName}</p>
               <p>{this.props.player.position.abbreviation}</p>
               <p>{this.props.player.jersey}</p>
-            </div>
+            </div> */}
           </Link>
         </HashRouter>
         {/* <a href={`/players/${this.props.player.id}`}>Alt Player Page</a> */}

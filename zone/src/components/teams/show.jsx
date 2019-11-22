@@ -5,6 +5,7 @@ import TeamPlayerIndexItem from '../players/teamPlayerIndexItem';
 import TeamStatItem from '../stats/teamStatItem';
 import TeamStatCategory from '../stats/teamStatCategory';
 import OppTeamStatCategory from '../stats/oppTeamStatCategory';
+import TeamIndex from './index.jsx';
 
 class TeamShow extends Component {
   constructor(props) {
@@ -80,7 +81,7 @@ class TeamShow extends Component {
 
 
   render() {
-    if (this.state.loading) return <h2>Loading...</h2>;
+    if (this.state.loading) return <div class="loader"></div>;
     // console.log(this.state.team);
     console.log(this.state.roster);
     console.log(this.state.team);
@@ -158,15 +159,24 @@ class TeamShow extends Component {
 
     return (
       <div className="team-body">
-        <HashRouter><Link to="/">Teams</Link></HashRouter>
-        {/* <h1 className="team-index-name" style={style} >{this.props.team.team.displayName}</h1> */}
+        {/* <TeamIndex /> */}
+        <div className="team-profile-nav">
+
         <h1 className="team-profile-name">{this.state.team.team.displayName}</h1>
-        <img className="team-profile-logo" src={this.state.team.team.logos[0].href} />
-        <h4>Record: {this.state.team.team.record.items[0].summary}</h4>
-        <p>Home: {this.state.team.team.record.items[1].summary}</p>
-        <p>Away: {this.state.team.team.record.items[2].summary}</p>
-        <p>{this.state.team.team.standingSummary}</p>
-        <h4>Coach: {this.state.roster.coach[0].firstName} {this.state.roster.coach[0].lastName}</h4>
+        <HashRouter><Link to="/zone"><img className="team-profile-logo2" src="nfl_logo.png" alt="logo192.png" /></Link></HashRouter>
+        </div>
+        <div className="team-info">
+          <img className="team-profile-logo" src={this.state.team.team.logos[0].href} />
+          <div className="team-info-overview">
+            <h1>Team Overview</h1>
+            <h4>Record: {this.state.team.team.record.items[0].summary}</h4>
+            <p>Home: {this.state.team.team.record.items[1].summary}</p>
+            <p>Away: {this.state.team.team.record.items[2].summary}</p>
+            <p>{this.state.team.team.standingSummary}</p>
+            <h4>Coach: {this.state.roster.coach[0].firstName} {this.state.roster.coach[0].lastName}</h4>
+          </div>
+  
+        </div>
         <div className="team-stats">
           <h1>Stats</h1>
           <div className="team-stats-content-outer">
