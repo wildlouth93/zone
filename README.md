@@ -15,8 +15,6 @@ The Zone provides data visualization for NFL players, games, and teams based upo
 4. CSS
 5. External API: SportsRadar
 
-## Wireframes 
-
 ## Implementation Timeline
 1. Complete API Call Configuration / Game components
 2. Create team/player profiles
