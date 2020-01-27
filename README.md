@@ -24,3 +24,8 @@ This project was designed and built in under 1 week.
 
 ![](https://user-images.githubusercontent.com/29221213/73215182-280ab680-4119-11ea-85a7-b0f53570c09d.png)
 
+### Player Profile
+* Player Information Section. The player information section shows the player's basic personal information and provides a statistical snapshot of the player's performance. 
+* Player Visuals Section. This section allows the user to open statistical visuals based upon statistical categories and other statistical factors. 
+* Player Stats Section. This section provides a table with the information used to populate the statistical visuals. 
+
