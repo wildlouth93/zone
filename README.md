@@ -29,3 +29,4 @@ This project was designed and built in under 1 week.
 * Player Visuals Section. This section allows the user to open statistical visuals based upon statistical categories and other statistical factors. 
 * Player Stats Section. This section provides a table with the information used to populate the statistical visuals. 
 
+![](https://user-images.githubusercontent.com/29221213/73217530-ba14be00-411d-11ea-8c6b-4e632658fcf1.png)
