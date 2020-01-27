@@ -35,4 +35,7 @@ This project was designed and built in under 1 week.
 
 * Player Stats Section. This section provides a table with the information used to populate the statistical visuals. 
 
+### Team Profile 
+* Team Information Section. Much like the player information section, the team information section shows the team's basic information. 
+* Team Visuals Section. This section shows 
 
