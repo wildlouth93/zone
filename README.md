@@ -30,3 +30,5 @@ This project was designed and built in under 1 week.
 * Player Stats Section. This section provides a table with the information used to populate the statistical visuals. 
 
 ![](https://user-images.githubusercontent.com/29221213/73217530-ba14be00-411d-11ea-8c6b-4e632658fcf1.png)
+
+![](https://user-images.githubusercontent.com/29221213/73217544-c00a9f00-411d-11ea-803a-b0e6ebf9eae4.png)
