@@ -17,6 +17,6 @@ This project was designed and built in under 1 week.
 * On the index page, users can navigate to a team page through the team index or to a player page through the player index. 
 * The tea
 
-![]
+![](https://user-images.githubusercontent.com/29221213/73215167-23460280-4119-11ea-9f63-c5274c6a8bb0.png)
 ![]
 
