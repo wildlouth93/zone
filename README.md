@@ -5,6 +5,8 @@ Welcome to the Zone. This application is an original project that allows users t
 
 This project was designed and built in under 1 week. 
 
+![](https://user-images.githubusercontent.com/29221213/73215126-132e2300-4119-11ea-96bb-e61f05c59d1e.png)
+
 ## Features
 * Scrollable Team Index
 * Scrollable Player Index 
