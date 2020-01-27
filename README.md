@@ -39,3 +39,9 @@ This project was designed and built in under 1 week.
 * Team Information Section. Much like the player information section, the team information section shows the team's basic information. 
 * Team Visuals Section. This section shows 
 
+![](https://user-images.githubusercontent.com/29221213/73219710-6062c280-4122-11ea-9ce9-61693e897105.png)
+
+
+
+
+
