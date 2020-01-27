@@ -8,10 +8,15 @@ This project was designed and built in under 1 week.
 ![](https://user-images.githubusercontent.com/29221213/73215126-132e2300-4119-11ea-96bb-e61f05c59d1e.png)
 
 ## Features
-* Scrollable Team Index
-* Scrollable Player Index 
+* Team Index
+* Player Index 
 * Player Profile 
 * Team Profile
 
+### Index Page
+* On the index page, users can navigate to a team page through the team index or to a player page through the player index. 
+* The tea
 
+![]
+![]
 
