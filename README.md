@@ -41,6 +41,8 @@ This project was designed and built in under 1 week.
 
 ![](https://user-images.githubusercontent.com/29221213/73219710-6062c280-4122-11ea-9ce9-61693e897105.png)
 
+![](https://user-images.githubusercontent.com/29221213/73219733-6ce71b00-4122-11ea-8ce4-9b4db46f60e9.png)
+
 * Team Roster Section. This section essentially shows a player index that is categorized based upon whether the player plays offense, defense, or special teams. 
 
 
