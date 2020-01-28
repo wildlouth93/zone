@@ -45,4 +45,9 @@ This project was designed and built in under 1 week.
 
 * Team Roster Section. This section essentially shows a player index that is categorized based upon whether the player plays offense, defense, or special teams. 
 
+## Highlights
+1. **API.** All the information used to power the site comes from a hidden ESPN API. While ESPN does not actually publish an API, API endpoints exist that allows developers to have access to the site's information. Not every NFL team exists in the API, but the information provided is kept up to date. 
 
+2. **No backend.** Because all of the information on the site comes from a third-party, I was able to build the site without saving any data on the backend. 
+
+3. **Time Complexity.** In this project, many nested components exist. The player visuals is an example of this. Because the information populating the site is multiple layers deep on the data tree, this nesting allows the time complexity to be spread across components and to depend on the user's decision to open that section.
